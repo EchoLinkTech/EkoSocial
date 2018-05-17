@@ -1,5 +1,5 @@
 # echolink_extension
-A Chrome extension that allows user to generate signature from LinkedIn profile. 
+A Chrome extension that allows user to generate signature from LinkedIn profile. MetaMask extension required.  
 
 Run:
 
