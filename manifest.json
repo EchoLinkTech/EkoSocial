@@ -1,0 +1,33 @@
+{
+	"manifest_version": 2,
+	"name": "EchoLink Extension",
+	"version": "0.1",
+	"content_scripts": [
+		{
+			"matches": [
+				"https://www.linkedin.com/*",
+				"https://localhost:1337/*",
+				"https://localhost:1337/injection.js"
+			],
+			"js": [
+				"content.js"
+			],
+			"all_frames": true
+		}
+	],
+	"browser_action": {
+		"default_icon": "icon.png",
+		"default_title": "EchoLink LinkedIn Extension",
+		"default_popup": "popup.html"
+	},
+	"background": {
+		"scripts": ["background.js"]
+	},
+	"content_security_policy": "script-src 'self' https://localhost:1337/injection.js; object-src 'self'; font-src 'self' data:font/woff",
+    "web_accessible_resources": [
+        "frame.html"
+    ],
+    "permissions": [
+    	"tabs"
+    ]
+}
