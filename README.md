@@ -1,4 +1,4 @@
-# EkoIdentity - EchoLink & LinkedIn Integration Reference Implementation
+# EkoSocial - EchoLink & LinkedIn Integration Reference Implementation
 A Chrome extension that allows user to generate signature from LinkedIn profile. MetaMask extension required. Extendable to all social networks.
 
 Run:
